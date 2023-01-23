@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/72dc9b7e0d.js" crossorigin="anonymous"></script>
+    <title>Mystic Sound</title>
+</head>
+
+<body>
+    <!-- Header Section Starts -->
+    <header class="header">
+        <a href="/index.html" class="logo"><i class="fa-solid fa-music"></i>Mystic Sound</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href=" #review">Review</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+        <!-- Hearder Icons -->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <!--  Hearder Form -->
+        <form action="#" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here....">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <!--  Shopping Cart Start -->
+        <div class="shopping-cart">
+            <div class="shopping-cart-products">
+
+            </div>
+            <div class="total"></div>
+            <a href="#" class="btn">Checkout</a>
+        </div>
+        <!--  Shopping Cart Ends -->
+
+        <!-- Login / Sign Up Form Start -->
+        <form class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <p>don't have an account <a href="#">Create Now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <!--  Login / Sign Up Form Ends -->
+    </header>
+
+
+
+
+    <section class="form__section">
+        <!-- Form section Start -->
+
+        <form action="#" method="GET" id="form" novalidate>
+            <h1>Shipping</h1>
+            <div class="form__container">
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="Name" placeholder="name" required minlength="3" maxlength="100" name="name">
+                    <small id="error"></small>
+                </div>
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" id="lastname" placeholder="last name" required minlength="3" maxlength="100" name="lastname">
+                    <small id="error"></small>
+                </div>
+                <!-- Email Address-->
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="email@address.com" required name="email">
+                    <small id="error"></small>
+                </div>
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input id="phone" type="tel" id="phone" placeholder="555-555-5555" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" name="phone">
+                    <small id="error"></small>
+                </div>
+
+
+                <!-- Shipping Address-->
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" placeholder="123 main street" required name="address">
+                    <small id="error"></small>
+                </div>
+                <!-- Select Country-->
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" required>
+                        <option value="">Select</option>
+                        <option value="United Stated">USA</option>
+                        <option value="Australia">Australia</option>
+                        <option value="China">China</option>
+                    </select>
+                    <small id="error"></small>
+                </div>
+                <!-- City-->
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city" required>
+                        <option value="">Select</option>
+                        <option value="Florida">FL</option>
+                        <option value="New York">NY</option>
+                        <option value="California">CA</option>
+                    </select>
+                    <small id="error"></small>
+                </div>
+                <!-- Zip-->
+                <div class="form-group">
+                    <label for="zip">Zip</label>
+                    <input type="number" id="zip" placeholder="1234" name="zip" required>
+                    <small id="error"></small>
+                </div>
+            </div>
+            <hr class="separator">
+
+
+            <h1>Billing</h1>
+            <div class="form__container">
+                <div class="billing-container">
+                    <!-- Billing Checkbox -->
+                    <input type="checkbox" name="billing" id="billing">
+                    <label for="billing">Billing same as shipping</label>
+                    <small id="error"></small>
+                    <!-- Other Billing -->
+                    <input type="checkbox" name="other-billing" id="other-billing">
+                    <label for="other-billing">Other Billing</label>
+                    <small id="error"></small>
+                </div>
+            </div>
+            <hr class="separator">
+            <!-- Payments -->
+            <h1 class="payment">Payments</h1>
+            <div class="form__container">
+                <!-- CC-Name -->
+                <div class="form-group">
+                    <label for="cc-name">Name</label>
+                    <input type="text" name="cc-name" id="cc-name" placeholder="Miriam" required>
+                    <small id="error"></small>
+                </div>
+
+                <!-- CC-LastName -->
+                <div class="form-group">
+                    <label for="cc-last">Last</label>
+                    <input type="text" name="cc-last" id="cc-last" placeholder="Jones" required>
+                    <small id="error"></small>
+                </div>
+                <!-- CC-Number-->
+                <div class="form-group">
+                    <label for="cc-number">Card Number</label>
+                    <input type="number" name="cc-number" id="cc-number" placeholder="555-555-5555" required>
+                    <small id="error"></small>
+                </div>
+                <!-- CC-Expiration -->
+                <div class="form-group">
+                    <label for="cc-expiration">Expiration</label>
+                    <input type="number" name="cc-expiration" id="cc-expiration" placeholder="12/02" required>
+                    <small id="error"></small>
+                </div>
+                <!-- CC-CVV -->
+                <div class="form-group">
+                    <label for="cc-cvv">CVV</label>
+                    <input type="number" name="cc-vv" id="cc-vv" placeholder="123" required>
+                    <small id="error"></small>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button type="submit" id="submit-btn" class="btn">Submit</button>
+            </div>
+        </form>
+
+        </div>
+        <!-- Form section End -->
+        <!-- Check out Section -->
+        <div class="checkout-container">
+            <h1>Cart</h1>
+            <h2 class="empty">Empty</h2>
+            <div class="checkout-cart-products">
+
+
+
+            </div>
+            <div class="total-price"></div>
+            <button type="submit" class="btn">Checkout</button>
+        </div>
+        <!-- Check out End  -->
+    </section>
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa-solid fa-music"></i>Mystic Sound</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequuntur architecto amet.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+255-555-55</a><br>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+255-453-55</a><br>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>mysticsound@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Florida, USA 33190</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>review</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+            </div>
+            <div class="box">
+                <h3>newletters</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+        </div>
+        <div class="credit">created by <span>steve de la rosa</span> | all rights reserved</div>
+    </section>
+    <!-- footer section ends -->
+    <!-- Header Section Ends -->
+
+    <script src="form.js"></script>
+    <script src="../products.js"></script>
+    <script src="cart.js"></script>
+
+
+
+
+
+</body>
+
+</html>

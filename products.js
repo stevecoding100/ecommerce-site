@@ -1,0 +1,58 @@
+const data = [
+  {
+    id: 30595,
+    img: "img/headphones_b_1.webp",
+    name: "Boat  Heaphones",
+    price: 250.99,
+    inStock: 15,
+  },
+  {
+    id: 394505,
+    img: "img/headphones_a_1.webp",
+    name: "X-21 Heaphones",
+    price: 220.99,
+    inStock: 64,
+  },
+  {
+    id: 39405,
+    img: "img/headphones_b_3.webp",
+    name: "Loop x-1 Heaphones",
+    price: 140.99,
+    inStock: 34,
+  },
+  {
+    id: 45633,
+    img: "img/headphones_b_4.webp",
+    name: "White Heaphones",
+    price: 430.99,
+    inStock: 14,
+  },
+  {
+    id: 20494,
+    img: "img/watch_3.webp",
+    name: "Apple Watch Black",
+    price: 220.99,
+    inStock: 24,
+  },
+  {
+    id: 9043,
+    img: "img/watch_1.webp",
+    name: "Tech Watch NavyBlue",
+    price: 280.99,
+    inStock: 24,
+  },
+  {
+    id: 48309,
+    img: "img/watch_4.webp",
+    name: "Tech Watch Red-Blue",
+    price: 300.98,
+    inStock: 45,
+  },
+  {
+    id: 59033,
+    img: "img/headphones_c_1.webp",
+    name: "M-12 Headphones",
+    price: 450.99,
+    inStock: 10,
+  },
+];

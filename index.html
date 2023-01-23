@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72dc9b7e0d.js" crossorigin="anonymous"></script>
+    <title>Mystic Sound</title>
+</head>
+
+<body>
+    <!-- Header Section Starts-->
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fa-solid fa-music"></i>Mystic Sound</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#products">Products</a>
+            <a href="#categories">Categories</a>
+            <a href=" #review ">Review</a>
+            <a href="#blogs ">Blogs</a>
+        </nav>
+        <!-- Hearder Icons -->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+            <div class="fas fa-search" id="search-btn"></div>
+            <a href="/cart/cart.html">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+            </a>
+            <div class="fas fa-user" id="login-btn"></div>
+        </div>
+        <!--  Hearder Form -->
+        <form action="#" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...." onkeyup="search()">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+
+        <!--  Shopping Cart Start -->
+        <div class="shopping-cart">
+            <div class="shopping-cart-products">
+
+            </div>
+            <div class="total"></div>
+            <a href="/cart/cart.html" class="btn">Checkout</a>
+        </div>
+        <!--  Shopping Cart Ends -->
+
+
+
+
+
+
+
+
+        <!-- Login / Sign Up Form Start -->
+        <form class="login-form">
+            <h3>login now</h3>
+            <input type="email" placeholder="your email" class="box">
+            <input type="password" placeholder="your password" class="box">
+            <p>forget your password <a href="#">Click Here</a></p>
+            <p>don't have an account <a href="#">Create Now</a></p>
+            <input type="submit" value="login now" class="btn">
+        </form>
+        <!--  Login / Sign Up Form Ends -->
+    </header>
+    <!-- Header Section Ends -->
+
+
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Enhance Your <span>Sound</span> Experience</h3>
+            <p>Modal 'Boat' -- Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae adipisci quam, illum laudantium, accusantium officiis quisquam rem aspernatur deserunt sed explicabo neque vero. Distinctio architecto explicabo eum, esse ea incidunt.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="hero-img">
+            <img src="img/headphones_b_4.webp" alt="White Headphones">
+        </div>
+
+    </section>
+    <!-- Home Section Ends -->
+
+
+    <!-- Product section starts -->
+    <section class="products" id="products">
+        <h1 class="heading">our <span>products</span></h1>
+        <div class=" swiper product-slider">
+            <div class="swiper-wrapper">
+            </div>
+        </div>
+    </section>
+    <!-- Product section ends -->
+
+    <!-- Features Section Starts -->
+    <section class="features" id="features">
+        <h1 class="heading">our <span>features</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fa-solid fa-truck"></i>
+                <h3>Free Shipping</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae iste eligendi.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-gear"></i>
+                <h3>Engineered Tested</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae iste eligendi.</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-ban"></i>
+                <h3>Noise Cancelling</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis molestiae iste eligendi.
+                </p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+    </section>
+    <!-- Features Section Ends -->
+
+    <!-- categories section starts -->
+
+    <section class="categories" id="categories">
+        <h1 class="heading">product <span>categories</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/headphones_b_4.webp" alt="headphones">
+                <h3>Headhones</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+            <div class="box">
+                <img src="img/speaker1.webp" alt="speaker">
+                <h3>Speakers</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+            <div class="box">
+                <img src="img/watch_2.webp" alt="watch">
+                <h3>Watch</h3>
+                <p>upto 45% off</p>
+                <a href="#" class="btn">show now</a>
+            </div>
+        </div>
+
+    </section>
+    <!-- categories section ends -->
+
+    <!-- Reviews Section Start -->
+    <section class="review" id="review">
+
+        <h1 class="heading">customer's <span>review</span></h1>
+
+        <div class="swiper review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="img/portrait-4599553_1280.jpg" alt="review profile">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Jiana Mirk</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/profile-img.jpg" alt="review profile">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Dianne Lynn</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/profile-man-1.jpg" alt="review profile">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Leo Sato</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+                <div class="swiper-slide box">
+                    <img src="img/profile-man.jpg" alt="review profile">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <h3>Johny Depth</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+            <button class="btn">View More</button>
+        </div>
+
+
+    </section>
+    <!-- Reviews Section ends -->
+
+    <!-- Blogs section starts -->
+    <section class="blogs" id="blogs">
+
+        <h1 class="heading">our <span>blogs</span></h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="img/blog-headphone.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>by user</a>
+                        <a href="#"><i class="fa fa-calendar"></i>01 Jan, 2023</a>
+                    </div>
+                    <h3>the power of sounds</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum iusto deserunt neque error unde.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/blog-exercise.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>by user</a>
+                        <a href="#"><i class="fa fa-calendar"></i>5 Jan, 2023</a>
+                    </div>
+                    <h3>3 benefits of exercising</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum iusto deserunt neque error unde.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="img/blog-watch.jpg" alt="">
+                <div class="content">
+                    <div class="icons">
+                        <a href="#"><i class="fa fa-user"></i>by user</a>
+                        <a href="#"><i class="fa fa-calendar"></i>24 Jan, 2023</a>
+                    </div>
+                    <h3>5 ways to be more productive in your life</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, rerum iusto deserunt neque error unde.
+                    </p>
+                    <a href="#" class="btn">read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blogs section ends-->
+
+    <!-- footer section starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3><i class="fa-solid fa-music"></i>Mystic Sound</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem consequuntur architecto amet.</p>
+                <div class="share">
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+            <div class="box">
+                <h3>contact info</h3>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+255-555-55</a><br>
+                <a href="#" class="links"><i class="fas fa-phone"></i>+255-453-55</a><br>
+                <a href="#" class="links"><i class="fas fa-envelope"></i>mysticsound@gmail.com</a>
+                <a href="#" class="links"><i class="fas fa-map-marker-alt"></i>Florida, USA 33190</a>
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>home</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>features</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>products</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>categories</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>review</a>
+                <a href="#" class="links"><i class="fas fa-arrow-right"></i>blogs</a>
+            </div>
+            <div class="box">
+                <h3>newletters</h3>
+                <p>subscribe for latest updates</p>
+                <input type="email" placeholder="your email" class="email">
+                <input type="submit" value="subscribe" class="btn">
+            </div>
+        </div>
+        <div class="credit">created by <span>steve de la rosa</span> | all rights reserved</div>
+    </section>
+    <!-- footer section ends -->
+    <script src="products.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
