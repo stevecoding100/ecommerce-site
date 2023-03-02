@@ -668,7 +668,11 @@ input[type="number"] {
     .checkout-container {
         display: none;
     }
+   .form__section {
+        width: 144%;
+    }
     .form__container {
+        width:100%;
         display: grid;
         grid-template-columns: auto;
     }
